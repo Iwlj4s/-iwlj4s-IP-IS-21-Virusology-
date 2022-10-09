@@ -1,0 +1,24 @@
+.center-pic{
+    display: block;
+    margin: auto;
+    width: 700px;
+    height: 500px;
+}
+
+.sQrg{
+    margin-left: 795px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-right: 750px;
+}
+#fp{
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: 500px;
+}
+
+#strg{
+    width: 700px;
+    height: 50px;
+}

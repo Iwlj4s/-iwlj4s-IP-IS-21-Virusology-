@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/styleH.css">
+    <link rel="stylesheet" href="css/styleP.css">
+    <link rel="stylesheet" href="css/stylenav.css">
+    <link rel="stylesheet" href="css/stylePP.css">
+    <link rel="stylesheet" href="css/styleimg.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/virus.png" type="image/x-icon" />
+    <style>
+        .scale {
+         transition: 1s; 
+        }
+        .scale:hover {
+         transform: scale(1.2); 
+        }
+       </style>
+</head>
+<header class="header">
+    <nav class=" navbar  navbar-collapse navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand p-0" href="" target="_blank">
+          <img width="120" align="left" src="img/emb.png"  alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          position=""
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <a class="list-group-item list-group-item-action"  href="njrat.html">nj.RAT</a>
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action"  href="#">Qr Code </a>
+              </li>
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action"  href="Wanna Cry.html">Wanna Cry</a>
+              </li>
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action"  href="final.html">Итог</a>
+              </li>
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action"  href="used info.html">Used Info </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h1><b>Вирусология</b></h1>
+    <h2><b>Вирус в QR коде</b></h2>
+    <p class="col-lg-8 mx-auto">Qr коды есть везде и в них можно загрузить все, любой текст. В этом и есть минус qr кодов, так как человек не может понять, что там написано до момента сканирования его и кто знает, что может там находиться. В него можно запихнуть вирус или замаскированный вредоносный сайт. Пример этому- полезная нагрузка. </p>
+    <p class="col-lg-8 mx-auto" id="opredPN">Полезная нагрузка- в мире вредоносных программ этот термин используется для описания действий на компьютере жертвы, которые должны выполнять вирусы, черви или трояны. Например, полезная нагрузка вредоносных программ подразумевает порчу данных, кражу конфиденциальной информации, повреждение компьютерных систем.</p>  
+    <p id="opredQRGEN" class="col-lg-8 mx-auto">QRGen- он кодирует полезную нагрузку в qr код используя python, если кто-то такой код просканирует, то вряд ли его устройству это понравиться.</p>
+    <h2><b>Справка QRGen</b></h2>
+    <p class="col-lg-8 mx-auto">Необходимо установить все зависимости и запустить скрипт</p>
+    <p id="c" class="col-lg-8 mx-auto">
+      pip3 install -r requirements.txt<br>
+      python3 qrgen.py 
+    </p>
+      <p class="col-lg-8 mx-auto">Далее видим справку</p>
+      <img  class="scale center-pic" id="sQrg" src="img/sQrg.png" alt="qrgens">
+      <p class="col-lg-8 mx-auto">Аргумент -h выведет то же самое, а вот запуск с ключом -l приведет к генерации QR-кодов из определенной категории. Всего их восемь.</p>
+      <ol>
+        <li>SQL-инъекции</li>
+        <li>XSS</li>
+        <li>Инъекции команд.</li>
+        <li>QR с форматированной строкой.</li>
+        <li>XXE.</li>
+        <li>Фаззинг строк.</li>
+        <li>SSI-инъекции.</li>
+        <li>LFI или получение доступа к скрытым каталогам.</li>
+      </ol>
+      <h2><b>Возможные атаки</b></h2>
+        <ol>
+          <li>0'XOR(if(now()=sysdate(),sleep(6),0))XOR'Z</li>
+        </ol>
+      <p class="col-lg-8 mx-auto">Первый класс атак — SQL-инъекции — используют при взломе БД и нарушении работы веб-сайтов. Например, запрос может вызывать зависание сайта.</p>            
+          <p id="opredsql"><br>SQL – инъекции — это один из очень распространённых способов взлома сайтов и веб-приложений,работающих с реляционными базами данных.</br>
+            <br>Этот способ основан на внедрении в выполняемый приложением запрос к базе данных произвольного SQL-кода,переданного злоумышленником.SQL-инъекции являются одной из разновидностей атак типа «инъекция кода».</br>
+           <br> SQL-инъекции, в зависимости от типа уязвимости, может дать возможность атакующему выполнить произвольный запрос к базе данных. То есть атакующий сможет прочитать содержимое любых таблиц, удалить, изменить или добавить данные, а также есть вероятность получения возможности работы с локальными файлами и выполнения произвольных команд на атакуемом сервере.</br>
+          </p>
+          <p class="col-lg-8 mx-auto">Последствия SQL – инъекций:</p>
+          <ul>
+            <li>Кража данных</li>
+            <li>Модификация данных</li>
+            <li>Удаление данных</li>
+            <li>Полный взлом системы</li>
+          </ul>
+          <ol>
+            <li value="2">&ltsvg onload=alert(1)&gt</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Второй класс атак — демонстрирует эксплуатацию XSS-уязвимости при атаке на веб-приложения с использованием SVG (Scalable Vector Graphic).</p>
+          <p id="opredxxs" class="col-lg-8 mx-auto">XSS уязвимость- Ее суть довольно проста, злоумышленнику удается внедрить на страницу JavaScript-код, который не был предусмотрен разработчиками. Этот код будет выполняться каждый раз, когда жертвы (обычные пользователи) будут заходить на страницу приложения, куда этот код был добавлен.</p>
+          <p class="col-lg-8 mx-auto">Применение XSS уязвимости:</p>
+          <ul>
+            <li>Кража токена</li>
+            <li>Кража окружения</li>
+            <li>Изменения контента сайта</li>
+            <li>Получения доступа к системе хостинга</li>
+          </ul>
+          <p id="opredsvg" class="col-lg-8 mx-auto">SVG — это Scalable Vector Graphics, язык разметки масштабируемой векторной графики, он входит в подмножество расширяемого языка разметки XML и предназначен для описания двумерной векторной и смешанной векторно-растровой графики в формате XML. То есть мы имеем возможность описать в XML то, что должно быть на рисунке, а также добавить динамику.</p>
+          <p class="col-lg-8 mx-auto">SVG поддерживает:</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>XLink</li>
+          </ul>
+          <p class="col-lg-8 mx-auto"><br>В некоторых браузерах можно подгружать ресурсы и со сторонних хостов.Хоть SVG и картинка, но из нее можно без проблем запускать код на JavaScript. Таким образом, если есть какой-то сайт, куда можно загружать картинки в SVG, то можно попытаться получить на этом сайте хранимую XSS'ку. Для этого нужно знать еще несколько тонкостей, связанных с тем, как браузер открывает SVG. </br></p>
+          <br><p class="col-lg-8 mx-auto">Есть несколько вариантов вставить SVG:</p>
+          <ul id="l1">
+            <li id class="col-lg-8 mx-auto">как картинку — через тег &ltimg&gt или свойство CSS background-image. Но в этом случае во всех современных браузерах JavaScript выполняться не будет;</li>
+            <li class="col-lg-8 mx-auto">как сторонний объект — с помощью тегов &ltobject&gt,&ltembed&gt,&ltiframe&gt. JS в этом случае работает, но требуется помнить про то, что работают и стандартные Same Origin Policy;</li>
+            <li class="col-lg-8 mx-auto">встроить в саму страницу (inline). Примеры выше как раз такие, и JavaScript работает;</li>
+          </ul>
+         <br><p class="col-lg-8 mx-auto">Если мы загрузим на сервер-жертву файл SVG, то, возможно, он отобразится, но в нем не будет работать JavaScript — как раз из-за того, что он подгружается с помощью тега &ltimg&gt. Но мы спокойно можем воспользоваться вторым или третьим методом и использовать прямую ссылку на наш SVG на атакуемом сервере.</p>
+          <ol>
+            <br><li value="3">cat /etc/passwd</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Третий класс атак — выводит на экран жертвы содержимое файла /etc/passwd: список аккаунтов Linux-based-систем и дополнительную информацию о них (раньше — хеши паролей этих учетных записей). В подобных случаях обычно стараются получить /etc/shadow и конфигурацию сервера, но все очень сильно зависит от цели</p>
+          <p id="opredetc" class="col-lg-10 mx-auto">/etc/shadow — это текстовый файл, содержащий информацию о паролях пользователей системы. Он принадлежит пользователю root и теневой группе и имеет 640 разрешений.</p>
+         <br> <ol>
+            <li value="4">%d%d%d%d%d%d%d%d%d%d</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Четвертый класс атак  — представляет собой выражение, которое вызовет переполнение буфера (buffer overflow). Оно возникает, когда объем данных для записи или чтения больше, чем вмещает буфер, и способно вызвать аварийное завершение или зависание программы, ведущее к отказу в обслуживании (denial of service, DoS). Отдельные виды переполнений дают злоумышленнику возможность загрузить и выполнить произвольный машинный код от имени программы и с правами учетной записи, от которой она выполняется, что делает эту ошибку довольно опасной.</p>
+          <ol>
+            <li value="5">&lt!ENTITY % xxe SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd"&gt</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Пятый класс атак — (XXE Injections) представляет собой вариант получения скрытой информации веб-сервера с помощью анализа вывода XML-файлов. Конкретно в нашем примере при запросе к серверу тот ответит зашифрованным в Base64 содержимым файла /etc/passwd, который уже упоминался.<br> Однако расшифровать его не составит труда — достаточно лишь воспользоваться встроенной в большинство дистрибутивов Linux утилитой base64 либо же онлайн-конвертером.</p>
+          <ol>
+            <li value="6">"A" x 33</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Шестой класс атак — это класс уязвимостей, который включает в себя предоставление «специфичных для языка маркеров формата» для выполнения произвольного кода или сбоя программы.<br> Говоря человеческим языком, это класс атак, при которых приложение некорректно очищает пользовательский ввод от управляющих конструкций, из-за чего эти конструкции в результате исполняются.</p>
+          <ol>
+            <li value="7">&ltpre&gt&lt!--#exec cmd="ls" --&gt&lt/pre&gt</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Седьмой класс атак — представляет собой вариант command injection, которая выполняет определенный код на стороне сервера.</p>
+          <p id="opredVC" class="col-lg-8 mx-auto">Внедрение команд ОС (иногда пишут «инъекция команд ОС», «инжект команд ОС») – это одна из разновидностей внедрения кода.<br> Её особенностью является выполнение несанкционированных команд операционной системы на удалённом сервере через уязвимое веб-приложение.</p>
+          <p class="col-lg-8 mx-auto">Используя эту уязвимость, атакующий может получить чувствительные данные:</p>
+          <ul>
+            <li>Файлы паролей операционной системы;</li>
+            <li>Конфигурационные файлы операционной системы;</li>
+            <li>Исходный код приложения;</li>
+          </ul>
+          <p class="col-lg-8 mx-auto">А также полностью скомпрометировать веб-сервер со всеми исходящими из этого последствиями.</p>
+          <ol>
+            <li value="8"> ../../../../../../etc/passwd</li>
+          </ol>
+          <p class="col-lg-8 mx-auto">Восьмой класс атак — это LFI-уязвимости (Local File Inclusion; включение локальных файлов), позволяющие просмотреть на уязвимых (или неправильно настроенных) серверах файлы и папки, которые не должны были быть видны всем. Один из возможных вариантов — просмотреть файл /etc/passwd. <br>Это может выглядеть вот так:</p>
+          <img src="img/lfi.png" alt="lfi"class="scale center-pic">
+          <p class="col-lg-8 mx-auto">Также можно создать свою полезную нагрузку и интегрировать ее.</p>
+          <h2><b>QRLJacker</b></h2>
+          <p id="opredSQRL" class="col-lg-8 mx-auto">SQRL — открытый проект для безопасного входа на веб-сайт и аутентификации. При входе, естественно, используется QR-код, который обеспечивает проверку подлинности</p>
+          <img src="img/nQR.png" alt="nqr"class="scale center-pic">
+          <h2><b>Принцип работы уязвимости</b></h2>
+          <p class="col-lg-8 mx-auto">Мы инициализируем сессию и клонируем код QR-логина на нашу фишинговую страницу. Затем пользователь переходит на нашу страницу и сканирует QR-код. В нашей сессии мы получаем подтверждение от сервиса и после можем использоваться аккаунтом пользователя.</p>
+          <p class="col-lg-8 mx-auto">Для этого потребуется:</p>
+          <ul>
+            <li>RLJacker (Linux & macOS)</li>
+            <li>Python 3.7+</li>
+            <li>Firefox</li>
+            <li>Geckodriver</li>
+          </ul>
+          <p class="col-lg-8 mx-auto">Распаковываем geckodriver  и выполняем команды:</p>
+          <p id="c" class="col-lg-8 mx-auto">
+            chmod +x geckodriver<br>
+            sudo mv -f geckodriver /usr/local/share/geckodriver<br>
+            sudo ln -s /usr/local/share/geckodriver /usr/local/bin/geckodriver<br>
+            sudo ln -s /usr/local/share/geckodriver /usr/bin/geckodriver</p>
+            <p class="col-lg-8 mx-auto">Клонируем репозиторий и переходим в папку с содержимым. Устанавливаем python зависимости</p>
+            <img src="img/pz.png" alt="pz"class="scale center-pic">
+           <br> <p id="XPh" class="col-lg-8 mx-auto">image_xpath - XPATH путь до самого QR кода<br>
+              img_reload_button - XPATH для кнопки рефреша QR кода<br>
+              change_identifier - XPATH до элемента, который изменится после успешной авторизации </p>
+              <img src="img/xp.png" alt="xp"class="scale center-pic">
+            <br>  <p class="col-lg-8 mx-auto">Вид фишинговой страницы</p>
+              <br><img id="fp" src="img/fp.png" alt="fp"class="scale center-pic">
+            <p class="col-lg-8 mx-auto">После скана QR кода мы получим Firefox profile, где в папке storage можем найти токен дискорда пользователя</p>
+            <br><img id="strg" src="img/srtg.png" alt="strg"class="scale center-pic">  
+            <p class="col-lg-8 mx-auto">Qr код можно интегрировать в какой либо веб плагин</p>
+            <img src="img/wha.png" alt="wha"class="scale center-pic"> 
+            <p><em>“Если хотите получать бонусы, то отсканируйте данный код на своем телефоне”</em></p>
+            <p class="col-lg-8 mx-auto">Ну а на деле, если вы отсканируете данный код, то у злоумышленника появиться доступ к вашей странице whatsapp.</p>
+          </div>
+    </body>
+</html>
